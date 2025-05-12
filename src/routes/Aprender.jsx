@@ -33,8 +33,8 @@ const Aprender = () => {
 
   return (
     <>
-      <div ref={pageTop}>
-        <div className=" md:flex justify-around bg-[#D45769] w-auto overflow-hidden relative block z-20 font-quicksand ">
+      <div className="w-full inline-block" ref={pageTop}>
+        <div className=" md:flex justify-around bg-[#D45769]  overflow-hidden relative block z-20 font-montserrat ">
           <img
             className="md:pt-32 mt-36 lg:mt-6 lg:mb-6 p-5"
             width={500}
@@ -42,8 +42,8 @@ const Aprender = () => {
             src={"/src/assets/aprender-screens.svg"}
             alt="Aprender Screens"
           ></img>
-          <div className=" font-Quicksand font-semibold md:pt-52 text-white md:pl-10 p-8">
-            <div className="lg:pt-18 md:text-seven lg:text-eight text-8xl text-left ">
+          <div className="  font-semibold md:pt-52 text-white md:pl-10 p-8">
+            <div className="lg:pt-18 md:text-seven lg:text-eight text-7xl text-left pb-8 ">
               Aprender
             </div>
             <p className="md:text-four md:font-normal font-normal tracking-wide sm:mr-10 mb-5 text-left ">
@@ -60,10 +60,12 @@ const Aprender = () => {
             </p>
           </div>
         </div>
-        <div className="bg-white w-full drop-shadow-sm flex justify-between top-0 sticky">
+        <div className="bg-white w-full drop-shadow-sm flex justify-between top-0 sticky whitespace-wrap overflow-auto p-5">
           <button
             onClick={() => scrollTo(problem)}
-            className="font-Quicksand text-lg p-8 hover:text-[#D45769]"
+            className=" text-lg p-8 hover:text-[#D45769]"
+            style={{backgroundColor: 'white', border: 'none', outline: 'none'
+            }}
           >
             <div>The </div> <div> Problem</div>
             {inViewProblem && !inViewResearch ? (
@@ -74,7 +76,9 @@ const Aprender = () => {
           </button>
           <button
             onClick={() => scrollTo(research)}
-            className="font-Quicksand text-lg p-8 hover:text-[#D45769]"
+            className=" text-lg p-8 hover:text-[#D45769]"
+            style={{backgroundColor: 'white', border: 'none', outline: 'none'
+            }}
           >
             <div>User</div> <div>Research</div>
             {inViewResearch && !inViewDesign ? (
@@ -86,7 +90,9 @@ const Aprender = () => {
 
           <button
             onClick={() => scrollTo(design)}
-            className="font-Quicksand text-lg p-8 hover:text-[#D45769]"
+            className=" text-lg p-8 hover:text-[#D45769]"
+            style={{backgroundColor: 'white', border: 'none', outline: 'none'
+            }}
           >
             <div>Design </div> <div>Solutions</div>
             {inViewDesign && !inViewWireframing ? (
@@ -98,7 +104,9 @@ const Aprender = () => {
 
           <button
             onClick={() => scrollTo(wireframing)}
-            className="font-Quicksand text-lg p-8 hover:text-[#D45769]"
+            className=" text-lg p-8 hover:text-[#D45769]"
+            style={{backgroundColor: 'white', border: 'none', outline: 'none'
+            }}
           >
             <div>Wireframing</div> <div>Prototyping</div>
             {inViewWireframing && !inViewTesting ? (
@@ -110,7 +118,9 @@ const Aprender = () => {
 
           <button
             onClick={() => scrollTo(testing)}
-            className="font-Quicksand text-lg p-8 hover:text-[#D45769]"
+            className=" text-lg p-8 hover:text-[#D45769]"
+            style={{backgroundColor: 'white', border: 'none', outline: 'none'
+            }}
           >
             <div>Usability </div> <div>Testing</div>
             {inViewTesting && !inViewMockups ? (
@@ -121,7 +131,9 @@ const Aprender = () => {
           </button>
           <button
             onClick={() => scrollTo(mockups)}
-            className="font-Quicksand text-lg p-8 hover:text-[#D45769]"
+            className=" text-lg p-8 hover:text-[#D45769]"
+            style={{backgroundColor: 'white', border: 'none', outline: 'none'
+            }}
           >
             <div>High-Fidelity </div> <div>Mockups</div>
             {inViewMockups && !inViewTakeaway ? (
@@ -132,7 +144,9 @@ const Aprender = () => {
           </button>
           <button
             onClick={() => scrollTo(nextSteps)}
-            className="font-Quicksand text-lg p-5 hover:text-[#D45769] "
+            className=" text-lg p-3 hover:text-[#D45769]"
+            style={{backgroundColor: 'white', border: 'none', outline: 'none'
+            }}
           >
             <div>Takeaways/</div> <div>Next Steps </div>
             {inViewTakeaway ? (
@@ -144,8 +158,8 @@ const Aprender = () => {
         </div>
         <div ref={problem} className="scroll-m-52" >
           <div ref={problemRef} className="my-10 md:my-32  ">
-            <div className="font-Quicksand lg:mx-44 md:mx-12 mx-8">
-              <p className="font-semibold md:text-five mb-4 text-xl">
+            <div className=" lg:mx-44 md:mx-12 mx-8 text-left">
+              <p className="font-semibold md:text-five mb-4 text-2xl">
                 The Corner Shop
               </p>
               <div className="grid grid-cols-1 gap-20">
@@ -164,7 +178,7 @@ const Aprender = () => {
             </div>
 
             <div className="grid grid-cols-1 lg:mx-44">
-              <p className=" font-Quicksand text-center text-2xl md:text-5xl lg:text-4xl text-aprenderPink bg-white p-10 md:p-20 mt-1 md:mt-20">
+              <p className="  text-center text-2xl md:text-5xl lg:text-4xl text-aprenderPink bg-white p-10 md:p-20 mt-1 md:mt-20">
                 Did other people have trouble recalling useful words and phrases
                 for everyday situations when learning new languages? If so, how
                 could it be solved?
@@ -175,9 +189,9 @@ const Aprender = () => {
           <div ref={researchRef} className="my-10 md:my-32 ">
             <div
               ref={research}
-              className=" scroll-m-52 font-Quicksand lg:mx-44 md:mx-12 mx-8 "
+              className=" scroll-m-52  lg:mx-44 md:mx-12 mx-8 text-left "
             >
-              <p className="font-semibold md:text-five text-xl mb-4">
+              <p className="font-semibold md:text-five text-2xl mb-4">
                 User Research
               </p>
               <div className="flex justify-evenly">
@@ -256,7 +270,7 @@ const Aprender = () => {
             </div>
 
             <div className="grid gird-cols-1 mb-16 md:mx-44 lg:mx-44 mx-8 md:mx-12 ">
-              <div className="font-Quicksand ">
+              <div className=" ">
                 <p className="font-semibold md:text-five text-xl mb-4">
                   How Might we...
                 </p>
@@ -268,7 +282,7 @@ const Aprender = () => {
                     solution that solved the problem.
                   </p>
                 </div>
-                <p className="font-Quicksand text-center text-xl md:text-4xl leading-relaxed  text-aprenderGold md:my-24 my-10">
+                <p className=" text-center text-xl md:text-4xl leading-relaxed  text-aprenderGold md:my-24 my-10">
                   "How might we improve the experience of learning a new
                   language so that users can retain and apply useful vocabulary
                   for specific locations or scenarios?"
@@ -276,8 +290,8 @@ const Aprender = () => {
               </div>
             </div>
             <div className="font-Bhaijaan lg:mx-44 mx-8 md:mx-16">
-              <div className="grid grid-cols-1 justify-center">
-                <div className="font-Quicksand ">
+              <div className="grid grid-cols-1 justify-center text-left">
+                <div className=" ">
                   <p className="font-semibold md:text-five text-xl mb-4">
                     Target User
                   </p>
@@ -289,7 +303,7 @@ const Aprender = () => {
                     </p>
                   </div>
 
-                  <div className="md:flex bg-slate-200 p-5 md:p-10 justify-center  font-Quicksand ">
+                  <div className="md:flex bg-slate-200 p-5 md:p-10 justify-center   ">
                     <div className="text-sm md:text-lg md:w-3/6">
                       <div className="leading-relaxed">
                         <p className="text-aprenderPink font-bold pb-3 ">
@@ -355,9 +369,9 @@ const Aprender = () => {
           <div ref={designRef} className=" grid grid-cols-1 md:my-32 my-10">
             <div
               ref={design}
-              className="font-Quicksand lg:mx-44 md:mx-12 mx-8 scroll-m-52"
+              className=" lg:mx-44 md:mx-12 mx-8 scroll-m-52 text-left"
             >
-              <p className="font-semibold md:text-five mb-4 text-xl">
+              <p className="font-semibold md:text-five mb-4 text-2xl">
                 Design Solutions
               </p>
               <div className="flex justify-evenly">
@@ -370,7 +384,7 @@ const Aprender = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-Quicksand p-10 mx-8 lg:mx-44 ">
+            <div className="grid grid-cols-1 bg-slate-200  text-left   p-10 mx-8 lg:mx-44 ">
               <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
                 <div className="">
                   <img
@@ -403,7 +417,7 @@ const Aprender = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-Quicksand p-10 mx-8 lg:mx-44 ">
+            <div className="grid grid-cols-1 bg-slate-200  text-left   p-10 mx-8 lg:mx-44 ">
               <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
                 <div className="">
                   <img
@@ -434,7 +448,7 @@ const Aprender = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-Quicksand p-10 mx-8 lg:mx-44 ">
+            <div className="grid grid-cols-1 bg-slate-200  text-left   p-10 mx-8 lg:mx-44 ">
               <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
                 <div className="">
                   <img
@@ -464,7 +478,7 @@ const Aprender = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-Quicksand p-10 mx-8 lg:mx-44 ">
+            <div className="grid grid-cols-1 bg-slate-200  text-left   p-10 mx-8 lg:mx-44 ">
               <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
                 <div className="">
                   <img
@@ -496,7 +510,7 @@ const Aprender = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-Quicksand p-10 mx-8 lg:mx-44 ">
+            <div className="grid grid-cols-1 bg-slate-200  text-left   p-10 mx-8 lg:mx-44 ">
               <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
                 <div className="">
                   <img
@@ -527,7 +541,7 @@ const Aprender = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 bg-slate-200  text-left  font-Quicksand p-10 mx-8 lg:mx-44 ">
+            <div className="grid grid-cols-1 bg-slate-200  text-left   p-10 mx-8 lg:mx-44 ">
               <div className="space-y-8 md:space-y-0 lg:space-y-0 md:flex lg:flex lg:space-x-10 md:space-x-10  lg:justify-around md:justify-around">
                 <div className="">
                   <img
@@ -557,9 +571,9 @@ const Aprender = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 justify-center font-Quicksand lg:mx-44 md:mx-12 md:my-20 mx-8 ">
+            <div className="grid grid-cols-1 justify-center  lg:mx-44 md:mx-12 md:my-20 mx-8  text-left">
               <div>
-                <p className="font-semibold md:text-five mb-4 mt-10">
+                <p className="font-semibold md:text-five mb-4 mt-10 text-2xl">
                   User Story Mapping
                 </p>
                 <div className="flex justify-evenly">
@@ -585,12 +599,12 @@ const Aprender = () => {
 
           <div
             ref={wireframingRef}
-            className="lg:mx-44 md:mx-12 md:my-32 mx-8 my-10 "
+            className="lg:mx-44 md:mx-12 md:my-32 mx-8 my-10 text-left "
           >
-            <div className="font-Quicksand ">
+            <div className=" ">
               <p
                 ref={wireframing}
-                className="font-semibold md:text-five mb-4 text-xl scroll-m-52"
+                className="font-semibold md:text-five mb-4 text-2xl scroll-m-52"
               >
                 Wireframing
               </p>
@@ -614,7 +628,7 @@ const Aprender = () => {
 
           <div
             ref={testingRef}
-            className="font-Quicksand lg:mx-44 md:mx-12 md:my-32 mx-8 my-10"
+            className=" lg:mx-44 md:mx-12 md:my-32 mx-8 my-10 text-left"
           >
             <p
               ref={testing}
@@ -637,7 +651,7 @@ const Aprender = () => {
                 saved me a lot of time.
               </p>
             </div>
-            <p className="md:p-10 p-5 bg-slate-200 mt-24">
+            <p className="md:p-10 p-5 bg-slate-200 mt-24 text-left ">
               <div className="font-bold">SUS Score</div>
               The SUS score for these wireframes was 6.5 out of 7. Because I
               tested early and made changes to the sketches, all the
@@ -664,7 +678,7 @@ const Aprender = () => {
             </p>
           </div>
 
-          <div ref={mockupsRef} className="font-Quicksand md:my-32 my-10   ">
+          <div ref={mockupsRef} className=" md:my-32 my-10  text-left  ">
             <p
               ref={mockups}
               className="font-semibold  lg:mx-44 md:mx-12  mb-4 mx-8 text-xl md:text-five scroll-m-52 "
@@ -678,14 +692,14 @@ const Aprender = () => {
               Well, I hoped to avoid those issues with the new mobile app I
               named...
             </p>
-            <p className="font-Quicksand text-seven md:text-eight lg:text-nine font-medium text-aprenderPink text-center my-5 md:my-32  mt-20 md:mx-auto">
+            <p className=" text-7xl md:text-eight lg:text-nine font-medium text-[#D45769] text-center my-5 md:my-32  mt-20 md:mx-auto">
               Aprender
             </p>
             <div className="lg:m-32 md:m-32">
               {(
                 <div>
                   <div className="lg:flex md:flex">
-                    <div className=" font-Bhaijaan2 lg:text-2xl lg:m-auto lg:p-24 md:m-auto md:p-3 m-10">
+                    <div className=" font-Bhaijaan2 lg:text-2xl lg:m-auto lg:p-24 md:m-auto md:p-3 m-10  text-left">
                       Sarah lives in the Rainier Vallely, one of the most
                       diverse zip codes in the United States. There is a new
                       corner shop that has opened up a few blocks away from
@@ -714,7 +728,7 @@ const Aprender = () => {
                         type="video/mp4"
                       />
                     </video>
-                    <div className=" font-Bhaijaan2 lg:m-auto font-normal lg:text-2xl lg:p-24 md:m-auto md:p-3 lg:block md:block hidden  ">
+                    <div className=" font-Bhaijaan2 lg:m-auto font-normal lg:text-2xl lg:p-24 md:m-auto md:p-3 lg:block md:block hidden text-left  ">
                       {" "}
                       She chooses the language she wants to learn. Then she
                       chooses a location.
@@ -722,7 +736,7 @@ const Aprender = () => {
                   </div>
 
                   <div className="md:flex lg:flex">
-                    <div className=" font-Bhaijaan2 lg:m-auto font-normal lg:text-2xl lg:p-24 md:m-auto m-10 ">
+                    <div className=" font-Bhaijaan2 lg:m-auto font-normal lg:text-2xl lg:p-24 md:m-auto m-10 text-left ">
                       A deck of words or phrases related to that location appear
                       on the screen. She can read the words in Spanish and see a
                       translation in English. Which helps her to remember them.
@@ -747,7 +761,7 @@ const Aprender = () => {
                         type="video/mp4"
                       />
                     </video>
-                    <div className=" font-Bhaijaan2 lg:m-auto font-normal lg:text-2xl lg:p-24 md:m-auto md:p-3 lg:block md:block hidden  ">
+                    <div className=" font-Bhaijaan2 lg:m-auto font-normal lg:text-2xl lg:p-24 md:m-auto md:p-3 lg:block md:block hidden text-left  ">
                       and save them in her saved cards tab to review them later.
                     </div>
                   </div>
@@ -758,7 +772,7 @@ const Aprender = () => {
 
           <div
             ref={takeawayRef}
-            className="font-Quicksand lg:mx-44 md:my-32 mx-8 my-10"
+            className=" lg:mx-44 md:my-32 mx-8 my-10 text-left"
           >
             <p
               ref={nextSteps}
@@ -767,7 +781,7 @@ const Aprender = () => {
               Next Steps & Takeaways
             </p>
             <div className="grid grid-rows-3 gap-6">
-              <div className=" bg-slate-200  p-10">
+              <div className=" bg-slate-200  p-10 text-left">
                 <div className="font-bold mb-5">
                   The importance of early usability testing
                 </div>
@@ -787,7 +801,7 @@ const Aprender = () => {
                   </ul>
                 </div>
               </div>
-              <p className="bg-slate-200  p-10 ">
+              <p className="bg-slate-200  p-10 text-left ">
                 <div className="font-bold mb-5">
                   Add features based on user research
                 </div>
@@ -799,7 +813,7 @@ const Aprender = () => {
                   </li>
                 </ul>
               </p>
-              <p className=" bg-slate-200  p-10 ">
+              <p className=" bg-slate-200  p-10 text-left ">
                 <div className="font-bold  mb-5">Steps to add in V2</div>
                 <ul className="list-disc">
                   <li>Include task specific usability testing </li>
