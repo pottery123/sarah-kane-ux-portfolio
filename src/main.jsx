@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router";
 import './index.css'
 import App from './App.jsx'
 import Home from './routes/Home.jsx'
@@ -12,14 +12,14 @@ import StateFair from './routes/StateFair.jsx';
 
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
-      <Route path="sarah-kane-ux-portfolio" element={<App />} />
+      <Route path="/" element={<App />} />
       <Route path="about" element={<About />} />
       <Route path="resume" element={<Resume />} />
       <Route path='aprender' element={<Aprender />} />
       <Route path='somo' element={<Somo />} />
       <Route path='state-fair' element={<StateFair />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 )
