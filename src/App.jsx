@@ -1,5 +1,7 @@
 import "./App.css";
 import NavBar from "./Components/NavBar";
+import portrait3 from "src/assets/portrait3"
+
 import { Outlet, NavLink, Link } from "react-router";
 
 function OpenStudy({ link, text }) {
@@ -38,7 +40,7 @@ function App() {
             </div>
             <img
               className=" md:justify-self-end  md:w-100 lg:w-100  md:mt-40"
-              src={"src/assets/portrait3.png"}
+              src={portrait3}
             ></img>
           </div>
           <div className=" md:flex justify-around bg-[#D45769]  overflow-hidden relative block z-20 font-montserrat ">
