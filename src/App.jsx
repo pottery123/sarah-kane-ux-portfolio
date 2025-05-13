@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from "./Components/NavBar";
-import portrait3 from "src/assets/portrait3"
+import portrait3 from "./src/assets/portrait3"
 
 import { Outlet, NavLink, Link } from "react-router";
 
