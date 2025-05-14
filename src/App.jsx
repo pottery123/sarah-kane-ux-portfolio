@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from "./Components/NavBar";
-import portrait3 from "./src/assets/portrait3"
+
 
 import { Outlet, NavLink, Link } from "react-router";
 
@@ -40,7 +40,7 @@ function App() {
             </div>
             <img
               className=" md:justify-self-end  md:w-100 lg:w-100  md:mt-40"
-              src={portrait3}
+              src={"portrait3.png"}
             ></img>
           </div>
           <div className=" md:flex justify-around bg-[#D45769]  overflow-hidden relative block z-20 font-montserrat ">
@@ -48,7 +48,7 @@ function App() {
               className="md:pt-32 mt-36 lg:mt-6 lg:mb-6 p-5"
               width={500}
               height={500}
-              src={"/src/assets/aprender-screens.svg"}
+              src={"aprender-screens.svg"}
               alt="Aprender Screens"
             ></img>
             <div className="  font-semibold md:pt-40 text-white md:pl-10 p-8">
@@ -83,12 +83,12 @@ function App() {
               className="md:pt-32 mt-10 lg:mt-6 lg:mb-6 p-5  lg:hidden md:hidden"
               width={500}
               height={500}
-              src={"/src/assets/state-fair-images.svg"}
+              src={"state-fair-images.svg"}
               alt="Aprender Screens"
             ></img>
             <div className="  font-semibold md:pt-40 text-white md:pl-10 p-8">
-              <div className="lg:pt-10 md:text-7xl lg:text-8xl text-7xl text-left pb-8 ">
-                State Fair
+              <div className="lg:pt-10 md:text-7xl lg:text-8xl text-5xl text-left pb-8 ">
+              State Fair App Re-design
               </div>
               <p className="md:text-four md:font-normal font-normal tracking-wide sm:mr-10 mb-5 ">
                 <span className="font-bold">Role:</span> UX/UI Designer,
@@ -102,7 +102,7 @@ function App() {
                 <span className="font-bold"> Type of project:</span> Personal,
                 Concept
               </p>
-              <div className="mt-24"> </div>
+            
               <div className="py-10">
                 <NavLink
                   className={`border-2 border-white rounded-full text-center px-3 py-2 bg-white text-[#730220] hover:bg-slate-100`}
@@ -113,10 +113,10 @@ function App() {
               </div>
             </div>
             <img
-              className="md:pt-32 mt-36 lg:mt-6 lg:mb-6 p-5  lg:block md:block"
+              className="md:pt-32 mt-36 lg:mt-6 lg:mb-6 p-5  lg:block md:block hidden"
               width={500}
               height={500}
-              src={"/src/assets/state-fair-images.svg"}
+              src={"state-fair-images.svg"}
               alt="Aprender Screens"
             ></img>
           </div>

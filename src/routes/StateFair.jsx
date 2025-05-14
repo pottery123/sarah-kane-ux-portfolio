@@ -31,12 +31,12 @@ const StateFair = () => {
           className="md:pt-32 mt-10 lg:mt-6 lg:mb-6 p-5  lg:hidden md:hidden"
           width={500}
           height={500}
-          src={"/src/assets/state-fair-images.svg"}
+          src={"state-fair-images.svg"}
           alt="Aprender Screens"
         ></img>
         <div className="  font-semibold md:pt-52 text-white md:pl-10 p-8 text-left">
-          <div className="lg:pt-18 md:text-eight lg:text-eight  mb-5 pb-8 text-7xl ">
-            State Fair
+          <div className="lg:pt-18 md:text-eight lg:text-eight  mb-5 pb-8 text-5xl ">
+            State Fair App Re-design
           </div>
           <p className="md:text-four md:font-normal font-normal tracking-wide sm:mr-10 mb-5 ">
             <span className="font-bold">Role:</span> UX/UI Designer, Interaction
@@ -56,17 +56,16 @@ const StateFair = () => {
           className="md:pt-32 mt-36 lg:mt-6 lg:mb-6 p-5 hidden lg:block md:block"
           width={500}
           height={500}
-          src={"/src/assets/state-fair-images.svg"}
+          src={"state-fair-images.svg"}
           alt="Aprender Screens"
         ></img>
       </div>
       <div
-        className="bg-white w-full drop-shadow-sm flex justify-between z-50 -top-1 sticky 
-           overflow-scroll p-5"
+        className="bg-white md:w-full drop-shadow-sm md:flex flex  md:justify-between top-0 sticky overflow-scroll h-full  md:h-full"
       >
         <button
           onClick={() => scrollTo(problem)}
-          className=" text-lg  p-8 hover:text-[#730220]"
+          className=" md:text-lg text-xs md:p-8 p-4 hover:text-[#730220]"
           style={{ backgroundColor: "white", border: "none", outline: "none" }}
         >
           <div>The </div> <div> Problems</div>
@@ -78,7 +77,7 @@ const StateFair = () => {
         </button>
         <button
           onClick={() => scrollTo(heuristic)}
-          className=" p-8 text-lg hover:text-[#730220]"
+          className=" md:text-lg text-xs md:p-8 p-4 hover:text-[#730220]"
           style={{ backgroundColor: "white", border: "none", outline: "none" }}
         >
           <div>Heuristic</div>
@@ -91,7 +90,7 @@ const StateFair = () => {
         </button>
         <button
           onClick={() => scrollTo(benchmarking)}
-          className=" text-lg  p-8 hover:text-[#730220]"
+          className=" md:text-lg text-xs md:p-8 p-4 hover:text-[#730220]"
           style={{ backgroundColor: "white", border: "none", outline: "none" }}
         >
           <div className="">Benchmarking</div>
@@ -104,7 +103,7 @@ const StateFair = () => {
 
         <button
           onClick={() => scrollTo(designTest)}
-          className=" text-lg  p-8 hover:text-[#730220]"
+          className=" md:text-lg text-xs md:p-8 p-4 hover:text-[#730220]"
           style={{ backgroundColor: "white", border: "none", outline: "none" }}
         >
           <div>Design &</div>
@@ -118,7 +117,7 @@ const StateFair = () => {
 
         <button
           onClick={() => scrollTo(finalMockups)}
-          className=" text-lg  p-8 hover:text-[#730220]"
+          className=" md:text-lg text-xs md:p-8 p-4 hover:text-[#730220]"
           style={{ backgroundColor: "white", border: "none", outline: "none" }}
         >
           <div>Final</div>
@@ -132,7 +131,7 @@ const StateFair = () => {
 
         <button
           onClick={() => scrollTo(nextSteps)}
-          className=" text-lg  p-8 hover:text-[#730220]"
+          className=" md:text-lg text-xs md:p-8 p-4 hover:text-[#730220]"
           style={{ backgroundColor: "white", border: "none", outline: "none" }}
         >
           <div>Takeaways/</div> <div>Next Steps </div>
@@ -276,7 +275,7 @@ const StateFair = () => {
                 <div className="mt-14 mb-5 font-semibold text-stateFairBlue">
                   A detailed document of the usability heuristic evaluation.
                 </div>
-                <img alt="screen 1" src="/src/assets/h2.png"></img>
+                <img alt="screen 1" src="h2.png"></img>
               </div>
             </div>
           </div>
@@ -418,7 +417,7 @@ const StateFair = () => {
                 <img
                   alt="test screen "
                   width={200}
-                  src={"/src/assets/test-1.png"}
+                  src={"test-1.png"}
                 ></img>
                 <ul className="list-disc  text-xs ">
                   <li className="">
@@ -436,7 +435,7 @@ const StateFair = () => {
                 <img
                   alt="test screen"
                   width={200}
-                  src={"/src/assets/test-2.png"}
+                  src={"test-2.png"}
                 ></img>
                 <ul className=" text-xs   list-disc">
                   <li className="">
@@ -455,7 +454,7 @@ const StateFair = () => {
                 <img
                   alt="test screen"
                   width={200}
-                  src={"/src/assets/test-3.png"}
+                  src={"test-3.png"}
                 ></img>
                 <ul className="list-disc text-xs">
                   <li className="">
@@ -483,7 +482,7 @@ const StateFair = () => {
                   <div className=" md:flex lg:flex gap-10">
                     <div className="lg:w-[400px] mb-10">
                       <img
-                        src={"src/assets/state-fair-screen-image-1.png"}
+                        src={"state-fair-screen-image-1.png"}
                         alt="Aprender Screens"
                         onClick={() => {}}
                       ></img>
@@ -563,13 +562,13 @@ const StateFair = () => {
                       onClick={() => {}}
                     >
                       <source
-                        src={"src/assets/state-fair-screen-video-2.mov"}
+                        src={"state-fair-screen-video-2.mov"}
                         type="video/mp4"
                       />
                     </video>
                     <div className="lg:hidden md:hidden block">
                       <div>
-                        <div>Error Prevention</div>
+                        <div className="font-bold md:font-bold">Error Prevention</div>
                         <div className="md:w-4/5 lg:-4/5">
                           The image size of the sections can cause the user to
                           choose the wrong section. In the new design the
@@ -588,7 +587,7 @@ const StateFair = () => {
                       alt="Aprender Screens"
                       onClick={() => {}}
                     >
-                      <source src={"src/assets/trimVid.mov"} type="video/mp4" />
+                      <source src={"trimVid.mov"} type="video/mp4" />
                     </video>
 
                     <div className="">
@@ -602,7 +601,7 @@ const StateFair = () => {
                           are no longer hidden behind a button.
                         </div>
                         <div className="mb-6">
-                          <div className={`font-bold mb-1 text-left`}>
+                          <div className="font-bold mb-1 text-left">
                             Error Prevention
                           </div>
                           <div className="lg:w-4/5 mb-6 text-left">
